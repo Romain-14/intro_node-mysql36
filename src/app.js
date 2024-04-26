@@ -1,11 +1,8 @@
 import "dotenv/config";
-
 import express from "express";
 import path from "path";
 
 import router from "./router/index.routes.js";
-
-import pool from "./database/config.js";
 
 const app = express();
 const PORT = 9000;

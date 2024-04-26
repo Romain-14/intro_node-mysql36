@@ -7,5 +7,20 @@
 </head>
 <body>
     <h1>Lorem ipsum dolor sit amet.</h1>
+    
+    <main>
+        <section>
+            <h2>Derniers articles</h2>
+            <% for (const story of stories) { %>
+                <article>                    
+                    <h3><%= story.title %></h3>
+                    <p><%= story.content %></p>
+                    <a href="/story/<%= story.id %>">Lire la suite</a>
+                </article>
+
+            <% } %>
+        </section>
+    </main>
+
 </body>
 </html>
